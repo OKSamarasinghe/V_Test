@@ -104,7 +104,7 @@ export default function Home() {
         {/* Main question */}
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-12 mb-8">
           <h1 className="text-5xl md:text-6xl font-bold text-pink-600 mb-6 heartbeat">
-            Will You Be My Valentine?
+            Hiii My Rapunzel Will You Be My Valentine?
           </h1>
           
           <div className="my-8">
