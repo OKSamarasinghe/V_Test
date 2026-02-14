@@ -238,7 +238,7 @@ export default function Home() {
             <Image src="/3.jpeg" alt="Love" fill className="object-cover" />
           </div>
           <div className="text-pink-700 text-base sm:text-lg font-medium">
-            <p>✨ Made with love just for you ✨</p>
+            <p>✨ Made with love just for you by Oshadha Samarasinghe ✨</p>
           </div>
           <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden animate-bounce opacity-80" style={{ animationDelay: '0.3s' }}>
             <Image src="/4.jpeg" alt="Love" fill className="object-cover" />

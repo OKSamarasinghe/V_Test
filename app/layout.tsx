@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: '💕 Will You Be My Valentine? | A Tangled Love Story 💕',
-  description: 'A magical Valentine\'s Day proposal inspired by Rapunzel and Flynn - Made with love ✨',
+  description: 'A magical Valentine\'s Day proposal developed by Oshadha Samarasinghe',
   keywords: 'valentine, love, rapunzel, tangled, romantic, proposal',
 }
 
