@@ -5,8 +5,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: '💕 Will You Be My Valentine? 💕',
-  description: 'A special question for someone special',
+  title: '💕 Will You Be My Valentine? | A Tangled Love Story 💕',
+  description: 'A magical Valentine\'s Day proposal inspired by Rapunzel and Flynn - Made with love ✨',
+  keywords: 'valentine, love, rapunzel, tangled, romantic, proposal',
 }
 
 export default function RootLayout({

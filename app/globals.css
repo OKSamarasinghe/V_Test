@@ -7,6 +7,37 @@ body {
   min-height: 100vh;
   /* Prevent horizontal scroll on mobile */
   overflow-x: hidden;
+  position: relative;
+}
+
+/* Add animated gradient background */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 182, 193, 0.3),
+    rgba(255, 192, 203, 0.3),
+    rgba(255, 218, 224, 0.3),
+    rgba(255, 228, 225, 0.3)
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* Improve touch targets on mobile */
@@ -34,6 +65,42 @@ body {
 
 .heartbeat {
   animation: heartbeat 1.5s infinite;
+  text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+}
+
+/* Enhanced float animation */
+@keyframes float-smooth {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+  66% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
+}
+
+/* Sparkle effect */
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+/* Glow pulse effect */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.5), 0 0 40px rgba(236, 72, 153, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.8), 0 0 60px rgba(236, 72, 153, 0.5);
+  }
 }
 
 @keyframes float-hearts {
